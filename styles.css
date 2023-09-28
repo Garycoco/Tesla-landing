@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-weight: 900;
+    font-family: 'Raleway', sans-serif;
+}
+li {
+    list-style: none;
+}
+
+.hero {
+    background-image: url(./assets/model_s.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+nav {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 56px;
+    padding:  0 3rem;
+    justify-content: space-between;
+}
+.nav-items, .nav-items-extra {
+    display: flex;
+    gap: 30px;
+}
+.nav-item, .nav-item-extra {
+    padding: 5px 10px;
+}
+.nav-item:hover, .nav-item-extra:hover {
+    background-color: #baa6a93b;
+    transition: all .5s ease;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.logo {
+    width: 120px;
+}
+
+.content {
+    text-align: center;
+    height: calc(100vh - 56px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5rem 0;
+}
+.top-content h1 {
+    margin-bottom: 1rem;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.buttons button {
+    width: 200px;
+    padding-block: 10px;
+    border-radius: 100px;
+    border: 0;
+    cursor: pointer;
+}
+.buttons #custom {
+    color: white;
+    background-color: #191d21;
+}
+.buttons #existing {
+    background-color: #baa6a9;
+}
+
